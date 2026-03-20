@@ -4,5 +4,18 @@
 ## OVERVIEW
 ファミコンソフト「TOP RIDER」を遊ぶための専用コントローラです。
 
+## 操作方法
+・アナログスティック（左右方向でバイクを傾ける。下方向に入れるとウィリー）
+
+・アクセルボタン（本来はSlow/Fast等がありますが、Fastのみです）
+
+・ブレーキボタン
+
+・シフトスイッチ（ギヤのLow/Highを切り替えるスライドスイッチ）
+
+・セレクトボタン
+
+・スタートボタン
+
 Martin Korthさんが開発したエミュレータ「NO$NES」の技術情報を参考にさせて頂きました。
 https://problemkaputt.de/everynes.htm#controllersinflatablecontrollers
