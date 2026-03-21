@@ -10,11 +10,11 @@
 #define BUTTON_PORT PORTB     // port
 #define BUTTON_PIN  PINB      // pin
 #define BUTTON_DDR  DDRB      // direction
-#define BUTTON_BITACCEL  (1<<0) // 
-#define BUTTON_BITBRAKE  (1<<1) // 
-#define BUTTON_BITSELECT (1<<2) // 
-#define BUTTON_BITSTART  (1<<5) // 
-#define BUTTON_BITSHIFT  (1<<4) // 
+#define BUTTON_BITACCEL  (1<<0) // アクセル
+#define BUTTON_BITBRAKE  (1<<1) // ブレーキ
+#define BUTTON_BITSELECT (1<<2) // セレクト
+#define BUTTON_BITSTART  (1<<5) // スタート
+#define BUTTON_BITSHIFT  (1<<4) // シフト
 
 // FC
 #define FC_PORT PORTD       // Data/Clock port
@@ -279,7 +279,7 @@ void vram_line(int x1 ,int y1 ,int x2 ,int y2 ,char color)
   }
 }
 
-// scroll
+//---- scroll
 void vram_scroll(char x1,char y1){
   unsigned char x,y;
   char color;
@@ -581,8 +581,9 @@ void pad_control(void)
 
     btn = ~BUTTON_PIN; // ボタン=ONでビットが1になる
     if(btn & BUTTON_BITACCEL){
-      senddata3 &= ~(1<<3);   // Fast
-//      senddata3 &= ~(1<<2); // Slow
+      senddata3 &= ~(1<<7);   // Turbo
+//      senddata3 &= ~(1<<3);   // Fast
+//      senddata3 &= ~(1<<2);   // Slow
     }
     if(btn & BUTTON_BITBRAKE){
       senddata4 &= ~(1<<2);
