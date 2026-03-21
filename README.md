@@ -23,3 +23,6 @@ https://www.youtube.com/watch?v=-WNPCwQ-MX0
 ## 参考資料
 Martin Korthさんが開発したエミュレータ「NO$NES」の技術情報を参考にさせて頂きました。
 https://problemkaputt.de/everynes.htm#controllersinflatablecontrollers
+
+## 免責
+内容は動作無保証です。万が一、事故が発生した場合の責任は負いかねます。
